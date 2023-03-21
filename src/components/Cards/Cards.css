@@ -1,0 +1,254 @@
+.cards {
+    width: 100%;
+}
+
+.cards2 {
+    width: 100%;
+    padding: 92px 156px 0 156px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.buttons {
+    width: 500px;
+    height: 600px;
+    border: solid black;
+}
+
+.skeleton {
+    width: 224px;
+    height: 364px;
+    background-color: rgba(234, 234, 234, 1);
+    position: relative;
+    padding-top: 260px;
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+
+.skeletonDots {
+    position: absolute;
+    width: 56px;
+    height: 8px;
+    background-color: rgba(248, 248, 248, 1);
+    top: 243px;
+    left: 84px;
+    border-radius: 3px;
+}
+
+.skeletonData {
+    height: 104px;
+    width: 224px;
+    background-color: rgba(248, 248, 248, 1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 12px;
+}
+
+.skeletonData1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.span1 {
+    width: 166px;
+    height: 25px;
+    background-color: rgba(234, 234, 234, 1);
+    border-radius: 8px
+}
+
+.span2 {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(234, 234, 234, 1);
+    border-radius: 8px;
+}
+
+.skeletonData2 {
+    height: 16px;
+    background-color: rgba(234, 234, 234, 1);
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.skeletonData3 {
+    height: 14px;
+    background-color: rgba(234, 234, 234, 1);
+    border-radius: 6px;
+}
+
+.loading {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.loading2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 9px 156px;
+    position: relative;
+}
+
+.error {
+    width: 224px;
+    height: 364px;
+    background-color: rgba(234, 234, 234, 1);
+    position: relative;
+    padding-top: 260px;
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+
+.errorLoading {
+    display: flex;
+    flex-direction: column;
+}
+
+.errorSkeleton {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.errorButtonDiv {
+    text-align: center;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;     
+    color: rgba(143, 143, 143, 1);
+    margin-top: 15px;
+}
+
+button {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    border: none;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: right; 
+    color: rgba(0, 160, 171, 1);  
+    height: 16px;
+    width: 134px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    transition: .7s;
+    outline: none;
+    margin-bottom: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.buttonDiv {
+    width: 100%;
+    text-align: center;
+}
+
+.buttonDiv2 {
+    width: 100%;
+    text-align: center;
+    height: 32px;
+}
+
+.buttonDiv button{
+    height: 32px;
+    width: 125px;
+    border-radius: 45px;
+    background-color: rgba(234, 234, 234, 1);
+}
+
+.notFound {
+    width: 100%;
+}
+
+.notFoundData {
+    width: 246px;
+    height: 100px;
+    margin: 209px auto;
+    text-align: center;
+}
+
+.h3 {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: rgba(0, 160, 171, 1);
+}
+
+.p {
+    margin-top: 9px;
+    color: rgba(143, 143, 143, 1);
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+}
+
+.loadingSpinner {
+    height: 33.40740203857422px;
+    width: 33.40740203857422px;
+    border-radius: 4.555555820465088px;
+    color:rgba(171, 207, 208, 1);
+    margin-top: 54px;
+}
+
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+.loading-spinner {
+    width: 33.41px;
+    height: 33.41px;
+    border: 4.56px solid rgba(171, 207, 208, 0.679);
+    border-top: 4.56px solid rgba(171, 207, 208, 1); 
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+  
+.spinner-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.h4 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:rgba(44, 44, 44, 1);
+    padding: 5px 8px;
+    background-color:rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 11px;
+    left: 65px;
+    border-radius: 8px;
+    width: 94px;
+    height: 24px;
+    z-index: 10;
+}
+
+@media (max-width: 320px) {
+    .cards2 {
+        width: 100%;
+        padding: 92px 48px 0 48px;
+    }
+}
+  

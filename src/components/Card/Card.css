@@ -1,0 +1,145 @@
+.card {
+    width: 224px;
+    height: 364px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(232, 232, 232, 1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.cardItems {
+    height: 104px;
+    width: 224px;
+    background-color: rgba(248, 248, 248, 1);
+    border-radius: 5px;
+    padding: 10px 12px;
+}
+
+.cardItem1 {
+    fill: solid #2C2C2C;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(44, 44, 44, 1);
+}
+
+.icon {
+    width: 20px;
+    height: 19px;
+    margin-top: 3px;
+    transition: .7s;
+}
+
+.icon:hover {
+    cursor: pointer;
+    height: 21.849998474121094px;
+    width: 23px;
+    color: rgba(164, 164, 164, 1);
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(44, 44, 44, 1);
+    margin-top: 10px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13.79px;
+    color: rgba(143, 143, 143, 1);
+}
+
+.cardItem2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+  
+article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 224px;
+    height: 260px;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+  
+.imagesDiv {
+    width: 224px;
+    height: 260px;
+    position: relative;
+}
+
+.dots {
+    position: absolute;
+    width: 56px;
+    display: flex;
+    justify-content: space-between;
+    left: 84px;
+    top: 243px;
+}
+
+.dot1 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(199, 199, 199, 1);
+    transition: .5s;
+}
+
+.dot2 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 160, 171, 1);
+    transition: .5s;
+}
+  
+.dot1:hover, .dot2:hover {
+    cursor: pointer;
+}
+  
+article.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+article.lastSlide {
+    transform: translateX(-100%);
+}
+  
+article.nextSlide {
+    transform: translateX(100%);
+}
